@@ -10,9 +10,10 @@
 void app_main(void)
 {
   nvs_flash_init();
-  xTaskCreate(&heartbeat_task, "heartbeat_task", 512, NULL, 5, NULL);
 
+  heartbeat_init();
   limbo_wifi_init();
-  
+
+  xTaskCreate(&heartbeat_task, "heartbeat_task", 512, NULL, 5, NULL);
 }
 
