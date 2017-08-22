@@ -4,7 +4,7 @@
 #include "esp_log.h"
 
 #include "limbo_wifi.h"
-#include "skynet.h"
+#include "fbi.h"
 
 static const char* TAG = "limbo_wifi";
 
